@@ -1,0 +1,433 @@
+body {
+    margin: auto;
+    padding: auto;
+    background-color: rgb(240, 251, 243);
+}
+
+section {
+    margin: 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100% - 80px);
+}
+
+.FirstBlock {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-radius: 16px;
+    border: 2px solid rgb(161, 170, 211);
+    background-color: rgb(250, 255, 255);
+}
+
+.LignHoraire {
+    display: flex;
+    justify-content: center;
+}
+
+.NameRubrique2 {
+    width: 90px;
+}
+
+.LigneSquareUniq {
+    background-color: gray;
+    width: 7px;
+    height: 49px;
+}
+
+.CheckBoxContent {
+    margin-left: 70px;
+}
+
+.LigneSquareRight {
+    background-color: gray;
+    width: 7px;
+    height: 36px;
+}
+
+.CenterSecondPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 233px;
+}
+
+.TextInput {
+    background-color: white;
+    border: 2px solid rgb(197, 203, 226);
+    border-radius: 4px;
+    font-size: large;
+    width: 82px;
+    height: 30px;
+    color: rgb(23, 32, 42);
+    text-align: center;
+}
+
+.p {
+    display: flex;
+}
+
+.animationBiging {
+    transition: transform 0.2s ease-in-out;
+}
+
+.animationBiging:hover {
+    transform: scale(1.1);
+}
+
+.animationText {
+    transition: text-decoration 0.5s ease-in;
+}
+
+.animationText:hover {
+    text-decoration: underline;
+}
+
+.HoraireSize {
+    width: 380px;
+}
+
+.Title {
+    /* Positionnement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Size */
+    height: 60px;
+    /* Design */
+    color: rgb(5, 19, 19);
+    /* Texte */
+    font-family: "Gill Sans", sans-serif;
+    font-size: 27px;
+    position: relative;
+}
+
+.BorderTitle {
+    border-bottom: 2px solid rgb(161, 170, 211);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.EditHoraireClass {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* CODE CSS DU CALENDRIER */
+.SecondBlock {
+    /* Positionnement */
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    /* Size */
+    width: 1300px;
+    height: 650px;
+    /* Border */
+    border-radius: 16px;
+    border: 2px solid rgb(161, 170, 211);
+    position: relative;
+    background-color: rgb(250, 255, 255);
+}
+
+.SecondMinBlock {
+    width: 100px;
+    height: 250px;
+    /* background-color: red; */
+    position: absolute;
+    right: -102px;
+    /* Décale l'élément de 100px vers la gauche */
+    top: calc(50% - 125px);
+    border: 2px solid rgb(161, 170, 211);
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(250, 255, 255);
+}
+
+.LignSMB {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+
+}
+
+.SquareSMB {
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(161, 170, 211);
+    border-radius: 4px;
+
+}
+
+.TextAreaSMB {
+    width: 35px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.SoulignText {
+    position: relative;
+    display: inline-block;
+}
+
+.SoulignText::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 4px;
+    animation: highlight-animation 2s ease-in-out infinite;
+}
+
+.SoulignText.highlight1::after {
+    background-color: #FFD700;
+}
+
+.SoulignText.highlight2::after {
+    background-color: red;
+}
+
+.SoulignText.highlight3::after {
+    background-color: dodgerblue;
+}
+
+.SoulignText.highlight4::after {
+    background-color: rgb(0, 200, 0);
+}
+
+@keyframes highlight-animation {
+    0% {
+        left: 0%;
+        width: 0%;
+    }
+
+    25% {
+        left: 0%;
+        width: 100%;
+    }
+
+    50% {
+        left: 100%;
+        width: 0%;
+    }
+
+    75% {
+        left: 0%;
+        width: 100%;
+    }
+
+    100% {
+        left: 0%;
+        width: 0%;
+    }
+
+}
+
+.ChoiceYears {
+    /* Positionnement */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Size */
+    height: 60px;
+    /* Design */
+    color: rgb(5, 19, 19);
+    /* Texte */
+    font-family: "Gill Sans", sans-serif;
+    font-size: 27px;
+    position: relative;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.containerCalendar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.tableContainer {
+
+    border: 2px solid rgb(161, 170, 211);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: 15px;
+    width: 200px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+.MonthAffich {
+    color: rgb(23, 32, 42);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    user-select: none;
+}
+
+.NameDayAffich {
+    background-color: #ffffff;
+    color: rgb(23, 32, 42);
+    border-right: 1px solid rgb(161, 170, 211);
+    border-top: 2px solid rgb(161, 170, 211);
+    border-bottom: 2px solid rgb(161, 170, 211);
+    font-weight: normal;
+    font-size: 16px;
+    font-style: italic;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(241, 250, 255);
+    user-select: none;
+    width: 26.25px;
+    height: 27px;
+
+}
+
+td {
+    border: 1px solid rgb(190, 190, 190);
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    user-select: text
+}
+
+th {
+    height: 32px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(246, 246, 246);
+}
+
+/* OVERLAY PART */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(224, 224, 224, 0.6);
+    /* couleur de fond semi-transparente */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    /* assure que l'overlay est au-dessus de tout le reste */
+}
+
+.spinClasse {
+    animation: spin 1s linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.decayClasse {
+    animation: decay 1s linear;
+}
+
+@keyframes decay {
+    to {
+        transform: rotate(360deg);
+        width: 0%;
+    }
+}
+
+.NewImageClasse {
+    display: none;
+    animation: none;
+}
+
+@keyframes GrowImage {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@keyframes NormalImage {
+    from {
+        width: 160px;
+        height: 160px;
+    }
+
+    to {
+        width: 147px;
+        height: 147px;
+    }
+}
+
+/* GESTION DE LA TAILLE DU CALENDRIER */
+@media screen and (min-width : 1500px) {
+    .SecondBlock {
+        width: 1300px;
+        height: 675px;
+    }
+}
+
+@media screen and (max-width : 1500px) and (min-width :1360px) {
+    .SecondBlock {
+        width: 1160px;
+        height: 920px;
+    }
+
+    .ChoiceYears {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width : 1360px) and (min-width :1120px) {
+    .SecondBlock {
+        width: 920px;
+        height: 920px;
+    }
+}
+
+@media screen and (max-width : 1120px) and (min-width :880px) {
+    .SecondBlock {
+        width: 680px;
+        height: 1150px;
+    }
+
+    .ChoiceYears {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width : 880px) {
+    .SecondBlock {
+        width: 440px;
+        height: 1580px;
+    }
+
+    .ChoiceYears {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

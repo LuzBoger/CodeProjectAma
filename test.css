@@ -1,0 +1,27 @@
+body{
+    margin: auto;
+    padding: auto;
+}
+.rounded-table {
+    border-collapse: collapse;
+    border: 2px solid rgb(161, 170, 211);
+    border-radius: 4px;
+    margin-top: 15px;
+    width: 190px;
+    height: 190px;
+  }
+  
+  .MonthAffich {
+    color: rgb(23, 32, 42);
+  }
+  
+  .NameDayAffich {
+    background-color: #ffffff;
+    color: rgb(23, 32, 42);
+    border-right: 1px solid rgb(161, 170, 211);
+    border-top: 2px solid rgb(161, 170, 211);
+    border-bottom: 2px solid rgb(161, 170, 211);
+    font-weight: normal;
+    font-size: 14px;
+    font-style: italic;
+  }

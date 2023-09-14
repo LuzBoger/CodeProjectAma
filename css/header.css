@@ -1,0 +1,9 @@
+.BoutonAccueil
+{
+    /* background-color: rgb(210, 232, 211); */
+    color: #6f78a1;
+    height: 32px;
+    width: 96px;
+    border: 2px solid;
+    border-radius: 8px;
+}

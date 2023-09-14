@@ -1,0 +1,75 @@
+body{
+    /* Code permettant d'initialiser le body à 100% de la taille de la window */
+    margin:auto;
+    padding:auto;
+    }
+section{
+    /* Attribut de placement des item */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* Personnalistion de la section */
+    background-color: rgb(222, 235, 235);
+    height : 100vh
+
+}
+.MiddleAuth{
+    /* Attribut de placement des item */
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    /* Personnalistion du div */
+    background-color: rgb(242, 255, 255);
+    height: 600px;
+    width: 400px;
+    border: 1px solid rgb(197, 203, 226);
+    border-radius: 50px;
+    
+}
+form{
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+}
+.label{
+    margin-bottom: 10px;
+    color:rgb(18, 19, 19);
+    font-family: "Gill Sans", sans-serif;
+    font-size: large;
+}
+.marginLabel1{
+    margin-top:30px
+}
+.TextInput{
+    height: 30px;
+    width: 300px;
+    background-color:rgb(222, 235, 235);
+    border: 1px solid rgb(197, 203, 226);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+a{
+    align-self: flex-end;
+    font-family: "Gill Sans", sans-serif;
+    font-size:small;
+    margin-top :1px;
+}
+.PushSubmit{
+    color:rgb(18, 19, 19);
+    height: 50px;
+    width: 300px;
+    font-size: large;
+    font-family: "Gill Sans", sans-serif;
+    background-color: rgb(222, 235, 235);
+    border: 1px solid rgb(197, 203, 226);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.PushSubmit:hover{
+    background-color: rgb(202, 215, 215);
+    border: 1px solid rgb(197, 203, 226);
+    border-radius: 5px;
+    cursor: pointer;
+}
